@@ -7,6 +7,7 @@ import javax.persistence.*;
 /**
  * 7/25/2021
  * CREATED BY @Ayman Alsapagh
+ * this is the Entity related to the persistent DB object
  **/
 @Entity
 @Table(name = "DEVICE_CARD")

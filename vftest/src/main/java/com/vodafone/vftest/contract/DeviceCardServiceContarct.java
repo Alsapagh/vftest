@@ -8,6 +8,7 @@ import java.util.List;
 /**
  * 7/25/2021
  * CREATED BY @Ayman Alsapagh
+ * this ia the contract interface that have abstract methods to be implemented in the business layer
  **/
 public interface DeviceCardServiceContarct {
 

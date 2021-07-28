@@ -15,6 +15,7 @@ import java.util.Optional;
 /**
  * 7/25/2021
  * CREATED BY @Ayman Alsapagh
+ * this class for Business Layer Handling
  **/
 @Service
 public class DeviceCardService implements DeviceCardServiceContarct {
@@ -24,7 +25,6 @@ public class DeviceCardService implements DeviceCardServiceContarct {
 
     @Override
     public List<DeviceCardEntity> getAllWFADevices() {
-//        return deviceCardRepo.findAllByStatus(Status.WAITING_FOR_ACTIVATION);
         return deviceCardRepo.findAllByStatus(Status.WAITING_FOR_ACTIVATION);
     }
 
@@ -34,7 +34,7 @@ public class DeviceCardService implements DeviceCardServiceContarct {
         deviceCardEntityPK.setOperatorCode(OperatorId);
         deviceCardEntityPK.setSimId(sim);
         Optional<DeviceCardEntity> res = deviceCardRepo.findById(deviceCardEntityPK);
-        return res.orElse(null);
+        return res.orElse(null);//Java 8 features
     }
 
     @Override

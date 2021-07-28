@@ -11,6 +11,7 @@ import java.util.List;
 /**
  * 7/25/2021
  * CREATED BY @Ayman Alsapagh
+ * this is the Interface relate to Data layer Management
  **/
 @Repository
 public interface DeviceCardRepo extends JpaRepository<DeviceCardEntity, DeviceCardEntityPK> {
